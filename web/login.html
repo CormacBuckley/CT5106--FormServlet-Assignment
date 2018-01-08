@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <p>Please enter your details below to log in to the site</p>
+        
+        <form action="Login" method="POST">
+            <fieldset>
+                <label>Username:</label>
+                <input type="text" required pattern="\S+" title="This field is required" name="username">
+                <label>Password:</label>
+                <input type="password" required pattern="\S+" title="This field is required" name="password">
+                 <label>E-mail</label>
+                <input type="text" required pattern="\S+" title="This field is required" name="mail">
+                <input class="spam" type="checkbox" name="spam" value="spam"> Would you like to be added to the mailing list?<br>
+                <input type="submit" value="Submit">                
+            </fieldset>
+        </form>
+        
+       
+    </body>
+</html>
